@@ -1,0 +1,393 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,500;1,100;1,200&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 10000px;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+.main-header{
+    background-color: #f8edce;
+    min-height: 650px;
+    position: relative;
+}
+
+.main-header header{
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 5%;
+    position: fixed;
+    width: 100%;
+    background-color: #fff;
+    z-index: 100;
+}
+
+.main-header header .navs{
+    display: flex;
+    gap: 30px;
+    visibility: visible;
+}
+
+.main-header header .navs ul{
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+.main-header header .navs ul li a{
+    text-transform: capitalize;
+    color: #444;
+    text-decoration: none;
+}
+
+.main-header header .navs .burger{
+    visibility: hidden;
+}
+
+.main-header header .navs .burger .bars{
+    background-color: #444;
+    width: 30px;
+    height: 3px;
+    margin-bottom: 3px;
+    border-radius: 3px;
+}
+
+.main-header .content{
+    padding: 100px 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-header .content .textContent{
+    max-width: 400px;
+    position: relative;
+}
+
+.main-header .content .textContent::before{
+    content: '';
+    background: linear-gradient(110deg, rgba(187, 107, 37, 10) 10%, transparent 60%);
+    height: 100px;
+    width: 100px;
+    top: -20px;
+    left: -20px;
+    position: absolute;
+    opacity: .5;
+    border-radius: 50%;
+}
+
+.main-header .content .textContent h3{
+    text-transform: capitalize;
+}
+
+.main-header .content .textContent ul{
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    margin-top: 40px;
+}
+
+.main-header .content .textContent button{
+    border: none;
+    outline: none;
+    padding: 8px 14px;
+    border-radius: 10px;
+}
+
+.main-header .content .textContent button a{
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+.main-header .content .textContent ul li:nth-child(1) button a{
+    color: #f8edce;
+} 
+
+.main-header .content .textContent ul li:nth-child(2) button a{
+    color: #bb6c25;
+} 
+
+.main-header .content .textContent ul li:nth-child(1) button{
+    background-color: #bb6c25;
+}
+
+.main-header .content .textContent ul li:nth-child(2) button{
+    background-color: transparent;
+    border: 1px solid #bb6c25;
+}
+
+.main-header .content .hero-images{
+    max-width: 500px;
+}
+
+.main-header .content .hero-images .images{
+    position: relative;
+    width: 100%;
+    background: linear-gradient(180deg, rgba(187, 107, 37, 0.20) 10%, transparent 50%);
+    border-radius: 50%;
+}
+
+.main-header .content .hero-images .images::before{
+    content: '';
+    position: absolute;
+    background-color: #bb6c25 10%;
+    height: 30px;
+    width: 100%;
+    bottom: 0;
+    z-index: 1;
+}
+
+.main-header .content .hero-images .images img{
+    width: 80%;
+}
+
+.main-content{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.main-content .side-content{
+    height: 100%;
+    width: 20%;
+}
+
+.main-content .side-content h3{
+    text-transform: capitalize;
+    color: #fff;
+    font-size: 1rem;
+    letter-spacing: .4px;
+    background-color: #bb6c25;
+    padding: 10px 30px;
+}
+
+.main-content .side-content .side-body-content .content-1{
+    padding: 10px 30px;
+}
+
+.main-content .side-content .side-body-content ul{
+    list-style: none;
+    text-transform: capitalize;
+}
+
+.main-content .side-content .side-body-content ul li{
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.main-content .side-content .side-body-content ul li a{
+    color: #000;
+    text-decoration: none;
+}
+
+.main-content .side-content .side-body-content .content-2 .payment{
+    padding: 10px 30px;
+}
+
+.main-content .center-content{
+    position: relative;
+    height: 350px;
+    width: 80%;
+    box-shadow: 5px 2px 5px 2px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+
+
+.main-content .center-content .content-wrapper {
+    height: 100%;
+}
+
+.main-content .center-content .content-wrapper .content-one{
+    background: url("air.jpg");
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.main-content .center-content .content-wrapper .content-two{
+    background: url("hidro.jpg");
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.main-content .center-content .content-wrapper .content-three{
+    background: url("alat.jpg");
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+.main-content .center-content .content-wrapper .content-four{
+    background: url("tanam.jpg");
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.main-content .right-content{
+    background-color: #bb6c25;
+    height: 100%;
+    width: 20%;
+}
+
+.overlay{
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.product, .product-special{
+    float: right;
+    width: 80%;
+    padding: 1rem;
+}
+
+.product h3, .product-special h3{
+    position: relative;
+    text-transform: capitalize;
+}
+
+.product h3::before , .product-special h3::before{
+    content: '';
+    position: absolute;
+    background-color: #444;
+    height: 3px;
+    width: 100%;
+    bottom: -5px;
+    border-radius: 10px;
+}
+
+.product h3::after, .product-special h3::after{
+    content: '';
+    position: absolute;
+    background-color: #bb6c25;
+    height: 3px;
+    width: 40%;
+    bottom: -5px;
+    left: 0;
+}
+
+.product .content-new-product {
+    margin-top: 40px;
+    width: 100%;
+}
+
+.product .content-new-product .product-wrapper{
+    display: flex;
+    flex-direction: row;
+    gap: 7px;
+}
+
+.product .content-new-product .product-wrapper .card{
+    width: 250px !important;
+}
+
+.card .images{
+    width: 100%;
+}
+
+.card .images img{
+    width: 100%;
+}
+
+.product-special .content-product-special{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    gap: 30px;
+    align-items: center;
+}
+
+.product-special .content-product-special .card{
+    width: 300px;
+    background-color: #f8edce;
+    text-align: center;
+}
+
+.product-special .content-product-special .card p{
+    text-transform: capitalize;
+}
+
+.product-special .content-product-special .card .images{
+    width: 100%;
+}
+
+.product-special .content-product-special .card .images img{
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:780px) {
+    .main-header .content{
+        flex-wrap: wrap-reverse;
+    }
+
+    .main-header header .navs ul{
+        display: none;
+    }
+
+    .main-header header .navs .burger{
+        visibility: visible;
+    }
+
+    .main-header .content .textContent{
+        margin-top: 50px;
+    }
+    
+    .main-content{
+    flex-wrap: wrap;
+    }
+
+    .main-content .side-content{
+        width: 100%;
+    }
+    
+    .main-content .center-content{
+        width: 100%;
+    }
+
+    .main-content .right-content{
+        width: 100%;
+    }
+        
+    .main-content .center-content{
+        border-radius: 0px;
+    }
+
+    /* Product */
+    .product, .product-special{
+        width: 100%;
+    }
+
+    .product-special .content-product-special .card{
+        width: 150px;
+    }
+}
